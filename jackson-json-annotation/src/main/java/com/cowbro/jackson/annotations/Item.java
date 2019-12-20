@@ -1,4 +1,4 @@
-package com.cowbro.test.annotation;
+package com.cowbro.jackson.annotations;
 
 import lombok.AllArgsConstructor;
 
