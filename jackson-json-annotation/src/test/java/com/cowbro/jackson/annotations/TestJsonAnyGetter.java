@@ -9,7 +9,7 @@ import static org.junit.Assert.assertThat;
 
 public class TestJsonAnyGetter {
   @Test
-  public void whenSerializingUsingJsonAnyGetter_thenCorrect()
+  public void whenSerializingWithJsonAnyGetter_thenCorrect()
       throws JsonProcessingException {
 
     PaymentResponse paymentResponse = new PaymentResponse("reqId1");

@@ -9,7 +9,7 @@ import static org.junit.Assert.assertThat;
 
 public class TestJsonValue {
   @Test
-  public void whenSerializingUsingJsonValue_thenCorrect()
+  public void whenSerializingWithJsonValue_thenCorrect()
       throws Exception {
 
     UserWithJsonValue user = new UserWithJsonValue(1, "Alex");
@@ -21,7 +21,8 @@ public class TestJsonValue {
   }
 
   @Test
-  public void testEnum_whenSerializingUsingJsonValue_thenCorrect()
+
+  public void testEnum_whenSerializingWithJsonValue_thenCorrect()
       throws Exception {
 
     String enumAsString = new ObjectMapper()

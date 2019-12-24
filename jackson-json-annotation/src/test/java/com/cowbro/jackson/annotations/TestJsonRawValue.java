@@ -9,7 +9,7 @@ import static org.junit.Assert.assertThat;
 
 public class TestJsonRawValue {
   @Test
-  public void whenSerializingUsingJsonRawValue_thenCorrect()
+  public void whenSerializingWithJsonRawValue_thenCorrect()
       throws JsonProcessingException {
 
     // User user = new User(1, "{\"age\":18}");

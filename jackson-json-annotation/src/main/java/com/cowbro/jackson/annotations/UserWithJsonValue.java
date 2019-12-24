@@ -8,7 +8,7 @@ public class UserWithJsonValue {
   public int id;
   private String name;
 
-  //@JsonValue
+  @JsonValue
   public String getName() {
     return name;
   }

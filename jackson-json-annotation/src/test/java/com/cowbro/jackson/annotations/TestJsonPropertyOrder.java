@@ -9,7 +9,7 @@ import static org.junit.Assert.assertThat;
 
 public class TestJsonPropertyOrder {
   @Test
-  public void whenSerializingUsingJsonPropertyOrder_thenCorrect()
+  public void whenSerializingWithJsonPropertyOrder_thenCorrect()
       throws JsonProcessingException {
 
     UserWithJsonPropertyOrder user = new UserWithJsonPropertyOrder(1, "Alex");
