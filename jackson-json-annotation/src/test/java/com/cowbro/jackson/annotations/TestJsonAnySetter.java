@@ -9,7 +9,7 @@ import static org.junit.Assert.assertEquals;
 
 public class TestJsonAnySetter {
   @Test
-  public void whenDeserializingUsingJsonAnySetter_thenCorrect()
+  public void whenDeserializingWithJsonAnySetter_thenCorrect()
       throws IOException {
     String json
         = "{\"name\":\"Alex\",\"attr1\":\"val1\"}";
