@@ -21,7 +21,6 @@ public class TestJsonValue {
   }
 
   @Test
-
   public void testEnum_whenSerializingWithJsonValue_thenCorrect()
       throws Exception {
 
