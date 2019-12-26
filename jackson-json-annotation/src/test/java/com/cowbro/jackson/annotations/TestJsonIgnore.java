@@ -9,18 +9,17 @@ import static org.hamcrest.core.IsNot.not;
 import static org.hamcrest.core.StringContains.containsString;
 import static org.junit.Assert.assertThat;
 
-public class TestJsonIgnoreProperties {
+public class TestJsonIgnore {
   @Test
-  public void whenSerializingUsingJsonIgnoreProperties_thenCorrect()
+  public void whenSerializingWithJsonIgnore_thenCorrect()
       throws JsonProcessingException {
 
-    UserWithJsonIgnoreProperties user
-        = new UserWithJsonIgnoreProperties(1, "Alex");
+    UserWithJsonIgnore user = new UserWithJsonIgnore(1, "Alex");
 
     String result = new ObjectMapper()
         .writeValueAsString(user);
 
-    System.out.println(result);
     assertThat(result, containsString("Alex"));
+    assertThat(result, not(containsString("id")));
   }
 }
