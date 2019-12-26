@@ -5,22 +5,21 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.core.IsNot.not;
 import static org.hamcrest.core.StringContains.containsString;
 import static org.junit.Assert.assertThat;
 
-public class TestJsonIgnore {
+public class TestJsonAutoDetect {
   @Test
-  public void whenSerializingWithJsonIgnore_thenCorrect()
+  public void whenSerializingWithJsonAutoDetect_thenCorrect()
       throws JsonProcessingException {
 
-    UserWithJsonIgnore user = new UserWithJsonIgnore(1, "Alex");
+    UserWithJsonAutoDetect user = new UserWithJsonAutoDetect(1, "Alex");
 
     String result = new ObjectMapper()
         .writeValueAsString(user);
 
     System.out.println(result);
+    assertThat(result, containsString("1"));
     assertThat(result, containsString("Alex"));
-    assertThat(result, not(containsString("id")));
   }
 }

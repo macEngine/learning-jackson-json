@@ -1,9 +1,7 @@
 package com.cowbro.jackson.annotations;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreType;
 import lombok.AllArgsConstructor;
-import sun.jvm.hotspot.debugger.Address;
 
 @AllArgsConstructor
 public class UserWithJsonIgnoreType {
