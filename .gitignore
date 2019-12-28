@@ -1,12 +1,1 @@
-gs/
-generated/
-*.versionsBackup
-dump.rdb
-
-# IntelliJ
-.idea
-*.iws
-*.iml
-*.ipr
-
-# maven
+/Users/suwenjie/wjsu/GitHub/dotfiles/01_git/.gitignore
